@@ -1,7 +1,10 @@
 package cloud.frizio.demo;
 
-import org.reactivestreams.Subscriber;
-import org.reactivestreams.Subscription;
+import java.util.concurrent.Flow.Subscriber;
+import java.util.concurrent.Flow.Subscription;
+
+//import org.reactivestreams.Subscriber;
+//import org.reactivestreams.Subscription;
 
 public class SimpleSubscriber implements Subscriber<Integer> {
  

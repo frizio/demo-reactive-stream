@@ -3,8 +3,11 @@ package cloud.frizio.demo;
 import java.util.Iterator;
 import java.util.stream.IntStream;
 
-import org.reactivestreams.Publisher;
-import org.reactivestreams.Subscriber;
+import java.util.concurrent.Flow.Publisher;
+import java.util.concurrent.Flow.Subscriber;
+
+//import org.reactivestreams.Publisher;
+//import org.reactivestreams.Subscriber;
 
 public class SimplePublisher implements Publisher<Integer> {
     

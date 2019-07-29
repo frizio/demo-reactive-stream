@@ -3,9 +3,13 @@ package cloud.frizio.demo;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.reactivestreams.Processor;
-import org.reactivestreams.Subscriber;
-import org.reactivestreams.Subscription;
+import java.util.concurrent.Flow.Processor;
+import java.util.concurrent.Flow.Subscriber;
+import java.util.concurrent.Flow.Subscription;
+
+//import org.reactivestreams.Processor;
+//import org.reactivestreams.Subscriber;
+//import org.reactivestreams.Subscription;
 
 public class SimpleProcessor implements Processor<Integer, Integer> {
 	

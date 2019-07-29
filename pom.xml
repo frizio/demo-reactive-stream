@@ -12,6 +12,10 @@
 
   <url>http://maven.apache.org</url>
 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
   <dependencies>
 
     <dependency>
@@ -45,6 +49,19 @@
         <version>3.8.0</version>
         <configuration>
           <release>11</release>
+        </configuration>
+      </plugin>
+      <plugin>
+        <!-- Build an executable JAR -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.1.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>cloud.frizio.demo.App</mainClass>
+            </manifest>
+          </archive>
         </configuration>
       </plugin>
     </plugins>
